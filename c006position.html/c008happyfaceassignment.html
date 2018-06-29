@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #face {
+            border: solid;
+            height: 400px;
+            width: 400px;
+            background-color: red;
+
+        }
+
+        #eyebrowleft,
+        #eyebrowright {
+            width: 100px;
+            height: 23px;
+            background-color: black;
+            position: fixed;
+            top: 10%;
+            border-radius: 10px;
+        }
+
+        #eyebrowleft {
+            left: 7%;
+            transform: rotate(30deg);
+        }
+
+        #eyebrowright {
+            right: 49%;
+            transform: rotate(-30deg);
+        }
+
+        #eyeleft,
+        #eyeright {
+            width: 50px;
+            height: 50px;
+            border: solid green;
+            border-radius: 50%;
+
+            background-color: black;
+            position: absolute;
+            top: 15%;
+        }
+
+        #eyebrowleft>.corner {
+            position:absolute;
+            width: 20px;
+            height: 34px;
+            left:-2px;
+            top: 1px;
+            background-color: black;
+            border-radius: 20px;
+        }
+        #eyeleft {
+            left: 10%;
+        }
+
+        #eyeright {
+            right: 52%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="face">
+        <div id="eyebrowleft" class="eyebrow">
+            <div class="corner"></div>
+        </div>
+        <div id="eyebrowright" class="eyebrow">
+            <div class="corner"></div>
+        </div>
+
+        <div id="eyeleft" class="eye"></div>
+        <div id="eyeright" class="eye"></div>
+        <div id="mouth">
+            <div id="mouthcorner11" class="mouthcorner"></div>
+            <div id="mouthcorner12" class="mouthcorner"></div>
+            <div id="mouthcorner13" class="mouthcorner"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+

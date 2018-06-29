@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+       #container {
+           border: solid;
+           height: 300px;
+           width: 600px;
+           position: relative;
+       }
+       #item1,#item2 {
+           width: 200px;
+           height: 100px;
+       }
+       #item1 {
+           background-color: blue;
+/*
+           position: relative;
+           right: 50px;
+           top: 100px;
+           
+*/
+/*  position: absolute;*/
+           
+           position: fixed;
+           right: 100px;
+           bottom: 40px;
+       }
+       #item2 {
+           background-color: yellowgreen;
+           width: 300px;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <ul>
+      <li>Relative means relative to its original position</li>
+      <li>Relative doesn't free its space,but absolute frees space,</li>
+      <li>Absolute will fit the contaner, if the container has a non-static position.</li>
+      <li></li>
+  </ul>
+    
+      <div id="container">
+          <div id="item1"></div>
+          <div id="item2"></div>
+      </div>  
+</body>
+</html>
