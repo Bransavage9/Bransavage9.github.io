@@ -14,12 +14,18 @@
         }
 
         #bar {
-            border: solid black;
+/*            border: solid black;*/
+/*            background-color: rgba(0,0,0,0.8);*/
             background-color: black;
+            opacity: 0.8;
+            
             color: white;
             text-transform: uppercase;
             overflow: auto;
             padding: 20px 50px;
+            position: fixed;
+            z-index: 999;
+            width: 100%;
         }
 
         ul a {
@@ -57,6 +63,7 @@
             border-radius: 50%;
             position: absolute;
             z-index: 1;
+            border: solid;
         }
 
         .bg-circle-1 {
@@ -66,19 +73,17 @@
 
         .bg-circle-2 {
             top: -300px;
-            border-bottom-left-radius:
         }
 
         .bg-circle-3 {
-            top: -500px;
-            left: 200px;
-            border-bottom-left-radius:
+            top: -300px;
+            left: 500px;
+
         }
 
         .bg-circle-4 {
-            top: -800px;
+            top: 100px;
             left: 300px;
-            border-bottom-left-radius:
         }
 
         #banner h1 {
@@ -174,11 +179,11 @@
         </div>
         <div class="bg-circle-1 bg-circle"></div>
         <div class="bg-circle-2 bg-circle"></div>
-        <!--
+        
         <div class="bg-circle-3 bg-circle"></div>
-        <div class="bg-circle-3 bg-circle"></div>
--->
+        <div class="bg-circle-4 bg-circle"></div>
 
+        
     </div>
     <div id="pictures">
         <img src="https://blackrockdigital.github.io/startbootstrap-one-page-wonder/img/01.jpg" alt="">
